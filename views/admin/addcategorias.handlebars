@@ -1,0 +1,25 @@
+{{#if erros}}
+    <section class="container">
+        <div class="red section white-text center-align">
+            {{#each erros}}
+                <p>{{texto}}</p>
+            {{else}}
+            
+           {{/each}}
+        </div>
+    </section>
+{{/if}}
+<h3 class="center-align white-text light">Nova categoria</h3>
+<div class="container section addform z-depth-2">
+    <form action="/admin/categorias/nova" method="POST" autocomplete="off">
+        <div class="input-field">
+            <label for="nome">Nome da categoria</label>
+            <input type="text" id="nome" name="nome">
+        </div>
+        <div class="input-field">
+            <label for="slug">Slug da categoria</label>
+            <input type="text" id="slug" name="slug">
+        </div>
+        <button type="submit" class="btn">Criar categoria</button>
+    </form>
+</div>

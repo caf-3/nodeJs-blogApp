@@ -1,0 +1,34 @@
+{{#if erros}}
+    <section class="container">
+        <div class="red section white-text center-align">
+            {{#each erros}}
+                <p>{{texto}}</p>
+            {{/each}}
+        </div>
+    </section>
+{{/if}}
+<h3 class="light center-align white-text">Criar Conta</h3>
+<div class="section container addform z-depth-2">
+    <form action="/usuarios/registrar" method="POST" autocomplete="off">
+        <div class="input-field">
+            <label for="nome">Nome</label>
+            <input type="text" name="nome" required>
+        </div>
+        <div class="input-field">
+            <label for="email">Email</label>
+            <input type="email" name="email" required>
+        </div>
+        <div class="input-field">
+            <label for="senha">Senha</label>
+            <input type="password" name="senha" required>
+        </div>
+        <div class="input-field">
+            <label for="senha2">Repita a senha</label>
+            <input type="password" name="senha2" required>
+        </div>
+        <div class="center-align">
+            <button type="submit" class="btn center-align purple">Criar conta</button>
+        </div>
+    </form>
+
+</div>

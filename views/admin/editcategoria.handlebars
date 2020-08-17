@@ -1,0 +1,30 @@
+
+
+{{#if erros}}
+    <section class="container">
+        
+        <div class="red section white-text center-align">
+            {{#each erros}}
+                <p>{{texto}}</p>
+            {{else}}
+           {{/each}}
+        </div>
+        
+        
+    </section>
+{{/if}}
+<h3 class="center-align white-text light">editar categoria</h3>
+<div class="container section addform z-depth-2">
+    <form action="/admin/categorias/edit" method="POST">
+    <input type="hidden" name="id" value="{{categoria._id}}">
+        <div class="input-field">
+            <label for="nome">Nome da categoria</label>
+            <input type="text" id="nome" name="nome" value="{{categoria.nome}}">
+        </div>
+        <div class="input-field">
+            <label for="slug">Slug da categoria</label>
+            <input type="text" id="slug" name="slug" value="{{categoria.slug}}">
+        </div>
+        <button type="submit" class="btn">Editar categoria</button>
+    </form>
+</div>

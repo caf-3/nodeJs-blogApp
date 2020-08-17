@@ -1,0 +1,16 @@
+<nav class="black">
+    <div class="nav-wrapper black">
+      <a href="/" class="brand-logo">Blog</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="/">Home</a></li>
+        <li><a href="/admin/postagens">Postagens</a></li>
+        <li><a href="/categorias">Categorias</a></li>
+        {{#if user}}
+          <li><a href="/usuarios/logout" class="btn">Sair</a></li>
+        {{else}}
+          <li><a href="/usuarios/login" class="btn">Entrar</a></li>
+          <li><a href="/usuarios/registrar" class="btn purple">Registrar</a></li>
+        {{/if}}
+      </ul>
+    </div>
+  </nav>

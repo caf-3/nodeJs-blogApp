@@ -1,0 +1,16 @@
+<h1 class="light">Lista de postagens</h1>
+<a href="/admin/postagens/add" class="btn">Nova postagens</a>
+{{#each postagens}}
+    <div class="card white section">
+        <h4><a href="/post/{{slug}}">{{titulo}}</a></h4>
+        <span class="new badge left large black" data-badge-caption="">{{categoria.nome}}</span>
+        <br>
+        <p>{{descricao}}</p>
+        <p>Data : {{data}}</p>
+        <a href="/admin/postagem/edit/{{_id}}" class="btn">Editar postagem</a>
+        <a href="/admin/postagem/deletar/{{_id}}" class="btn red">Deletar postagem</a>
+    </div>
+
+{{else}}
+<h4>Sem nenhuma postagem</h4>
+{{/each}}

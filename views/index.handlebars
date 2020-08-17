@@ -1,0 +1,13 @@
+<h2>Lista de postagens</h2>
+{{#each postagens}}
+    <div class="card section">
+        <h4>{{titulo}}</h4>
+        <p>{{descricao}}</p>
+        <a href="/postagem/{{slug}}" class="btn purple">leia mais</a>
+        <hr>
+        <span class="new badge left black" data-badge-caption="">{{categoria.nome}}</span><br>
+        <p>Data de publicação : {{data}}</p>
+    </div>
+{{else}}
+    <h4>Sem nenhum postagem</h4>
+{{/each}}

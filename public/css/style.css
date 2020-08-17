@@ -1,0 +1,14 @@
+.addform{
+    padding: 50px;
+    background-color: white;
+}
+.card{
+    padding-left: 2%;
+    padding-right: 2%;
+}
+.card p{
+    text-align: justify;
+}
+span.badge{
+    font-size: 1.3rem !important;
+}

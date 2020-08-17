@@ -1,0 +1,12 @@
+<h3 class="light white-text">Categoria {{categoria.nome}}</h3>
+{{#each postagens}}
+    <div class="card section">
+        <h5>{{titulo}}</h5>
+        <p>{{descricao}}</p>
+        <a href="/postagem/{{slug}}" class="btn purple">leia mais</a>
+        <hr>
+        <p>Data de publicação : {{data}}</p>
+    </div>
+{{else}}
+    <h5>Sem nenhum postagem</h5>
+{{/each}}

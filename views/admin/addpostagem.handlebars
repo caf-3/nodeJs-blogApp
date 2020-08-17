@@ -1,0 +1,43 @@
+{{#if erros}}
+    <section class="container">
+        <div class="red section white-text center-align">
+            {{#each erros}}
+                <p>{{texto}}</p>
+            {{else}}
+           {{/each}}
+        </div>
+    </section>
+{{/if}}
+<h3 class="center-align light">Nova postagem</h3>
+<div class="container section addform z-depth-2">
+    <form action="/admin/postagens/nova" method="POST">
+        <div class="input-field">
+            <label for="titulo">Titulo</label>
+            <input type="text" name="titulo" required>
+        </div>
+        <div class="input-field">
+            <label for="slug">Slug</label>
+            <input type="text" name="slug" required>
+        </div>
+        <div class="input-field">
+            <label for="descricao">Descrção</label>
+            <input type="text" name="descricao" required>
+        </div>
+        <div class="input-field">
+            <label for="conteudo">Conteudo</label>
+            <textarea name="conteudo" class="materialize-textarea" required></textarea>
+        </div>
+        <div class="input-field">
+            <select name="categoria">
+                <option value="0" disabled selected>selecione uma categoria</option>
+                {{#each categorias}}
+                    <option value="{{_id}}">{{nome}}</option>
+                {{else}}
+                    <option value="0">Sem nenhuma categoria</option>
+                {{/each}}
+            </select>
+            <label>Selecione uma categoria</label>
+        </div>
+        <button type="submit" class="btn">Criar postagem</button>
+    </form>
+</div>

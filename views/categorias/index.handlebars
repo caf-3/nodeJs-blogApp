@@ -1,0 +1,7 @@
+<h2 class="light">Categorias</h2>
+<hr>
+{{#each categorias}}
+    <a href="/categoria/{{slug}}" class="white-text"><h5>{{nome}}</h5></a>
+{{else}}
+    <h5>Sem nenhuma categoria registrada</h5>
+{{/each}}

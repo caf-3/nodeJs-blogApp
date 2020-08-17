@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{metaTags.title}}</title>
+    <meta name="description" content="{{metaTags.description}}">
+    <meta name="keywords" content="{{metaTags.keywords}}">
+    <link rel="stylesheet" href="/css/materialize.css">
+    <link rel="stylesheet" href="/css/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body class="purple">
+    {{>_navbar}}
+    <div class="container">
+        {{>_msg}}
+        {{{body}}}
+    </div>
+
+    <script src="/js/jquery-3.4.1.min.js"></script>
+    <script src="/js/materialize.js"></script>
+    <script src="/js/custom.js"></script>
+</body>
+
+</html>
