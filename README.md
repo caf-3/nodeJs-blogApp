@@ -12,8 +12,7 @@ Para produção usei o Mongo Atlas
 [MaterializeCSS](https://materializecss.com)
 
 ## Teste
-Primeiro voçe precisa ter o [NodeJs](https://nodejs.org) instalado na sua maquina
-E depois voçe precisa do [MongoDB](http://mongodb.com) devidamente instalado na sua maquina
+Voçe precisa ter o [NodeJs](https://nodejs.org) e o [MongoDB](http://mongodb.com) devidamente instalados na sua maquina
 
 Baixe o codigo do projecto 
 
