@@ -18,6 +18,7 @@ Baixe o codigo do projecto
 
 Abra o Terminal ou CMD no diretório em que voçe baixou o codigo e digite
 ```bash
+npm install
 npm start
 ```
 E já está!
